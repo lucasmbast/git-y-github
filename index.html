@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Git y GitHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>Git<span>Hub</span> Academy</h2>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#git">Git</a></li>
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#comandos">Comandos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h1>Aprende Git y GitHub</h1>
+    <p>Domina el control de versiones y lleva tus proyectos
+       al siguiente nivel.</p>
+    <a href="#comandos" class="btn">Ver comandos</a>
+</section>
+
+<section class="contenido" id="git">
+    <h2>¿Qué es Git?</h2>
+    <p>
+        Git es un sistema de control de versiones que permite
+        registrar los cambios realizados en un proyecto,
+        recuperar versiones anteriores y trabajar en equipo.
+    </p>
+</section>
+
+<section class="contenido" id="github">
+    <h2>Qué es GitHub?</h2>
+    <p>
+        GitHub es una plataforma online que permite almacenar
+        repositorios Git, compartir código y colaborar con
+        otros desarrolladores.
+    </p>
+</section>
+
+<section class="contenido" id="comandos">
+    <h2>Comandos básicos de Git</h2>
+
+    <div class="comando">
+        <h3>1. Configurar usuario</h3>
+        <p>Configura tu nombre de usuario:</p>
+        <code>git config --global user.name "Tu Nombre"</code>
+        <button onclick="copiar(this)">Copiar</button>
+    </div>
+
+    <div class="comando">
+        <h3>2. Iniciar un repositorio</h3>
+        <p>Inicializa Git en tu proyecto:</p>
+        <code>git init</code>
+        <button onclick="copiar(this)">Copiar</button>
+    </div>
+
+    <div class="comando">
+        <h3>3. Agregar archivos</h3>
+        <p>Agrega los archivos al área de preparación:</p>
+        <code>git add .</code>
+        <button onclick="copiar(this)">Copiar</button>
+    </div>
+
+    <div class="comando">
+        <h3>4. Guardar cambios</h3>
+        <p>Crea un commit con tus cambios:</p>
+        <code>git commit -m "Primer commit"</code>
+        <button onclick="copiar(this)">Copiar</button>
+    </div>
+
+    <div class="comando">
+        <h3>5. Ver el estado</h3>
+        <p>Consulta los cambios del proyecto:</p>
+        <code>git status</code>
+        <button onclick="copiar(this)">Copiar</button>
+    </div>
+
+    <div class="comando">
+        <h3>6. Subir cambios</h3>
+        <p>Envía los cambios a GitHub:</p>
+        <code>git push origin main</code>
+        <button onclick="copiar(this)">Copiar</button>
+    </div>
+
+    <div class="comando">
+        <h3>7. Descargar proyecto</h3>
+        <p>Clona un repositorio:</p>
+        <code>git clone URL_DEL_REPOSITORIO</code>
+        <button onclick="copiar(this)">Copiar</button>
+    </div>
+</section>
+
+<section class="contenido">
+    <h2>Flujo de trabajo Git</h2>
+    <div class="flujo">
+        <div>Working Directory</div>
+        <span>↓</span>
+        <div>Git Add</div>
+        <span>↓</span>
+        <div>Staging Area</div>
+        <span>↓</span>
+        <div>Git Commit</div>
+        <span>↓</span>
+        <div>Git Push</div>
+        <span>↓</span>
+        <div>GitHub</div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 GitHub Academy | Aprende y desarrolla tu futuro</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
